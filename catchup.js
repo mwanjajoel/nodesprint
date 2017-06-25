@@ -55,15 +55,15 @@ module.exports = counter;
 //declare an events emitter object
 /** myEventsEmitter = new events.EventEmitter();
 
-//attach a function once the event is emitted.
-myEventsEmitter.on('someEvent', function (message) {
+ //attach a function once the event is emitted.
+ myEventsEmitter.on('someEvent', function (message) {
 
     //log it to the browser console
     console.log(message)
 });
 
-//then we emit the event with a message parameter for the function.
-myEventsEmitter.emit('someEvent', 'Hi this is an event that has been emitted'); **/
+ //then we emit the event with a message parameter for the function.
+ myEventsEmitter.emit('someEvent', 'Hi this is an event that has been emitted'); **/
 
 //new class object called Person that takes in a name Parameter
 let Person = function (name) {
@@ -97,6 +97,9 @@ people.forEach(function (person) {
 
 //we then emit
 james.emit('speak', 'Hey Guys!');
+mary.emit('speak', 'Hiii, I am Mary');
+essy.emit('speak', 'Hello I am Esther');
+
 
 
 
