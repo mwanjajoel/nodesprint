@@ -1,5 +1,19 @@
 {
   "name": "nodesprint",
-  "version": "0.0.1",
-  
+  "version": "1.0.0",
+  "description": "A simple web application to get me up to speed with Node JS ",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://bitbucket.org/mwanjajoel/nodedash.git"
+  },
+  "keywords": [
+    "nodesprint"
+  ],
+  "author": "mwanjajoel",
+  "license": "ISC",
+  "homepage": "https://bitbucket.org/mwanjajoel/nodedash#readme"
 }

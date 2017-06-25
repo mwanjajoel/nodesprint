@@ -4,7 +4,7 @@
 
 var time = 0;
 
-//set a timer variable that runs a setInterval time function
+//set a timer variable that runs a setInterval time function using the Function Expression technique in Node JS
 var timer = setInterval(function () {
 
     time += 2;
