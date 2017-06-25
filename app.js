@@ -2,7 +2,7 @@
  * Created by mwanjajoel on 25/06/2017.
  */
 
-var theCounter = require("./count");
+var theCounter = require("./stuff");
 
 var time = 0;
 
