@@ -3,14 +3,19 @@
  */
 
 let http = require("http");
+let fs = require('fs');
 
 let server = http.createServer(function (request, response) {
 
     //we then write response headers
     response.writeHead(200, {'Content-Type': 'text/plain'});
 
-    //we then end the response and send it back to the browser
-    response.end("GOB SMACK!");
+    //we create a readstream
+   var theReadStream =  fs.createReadStream(__dirname + '/read.txt', 'utf8');
+
+   //then we pipe it to the response
+    theReadStream.pipe(response);
+
 
 
 });
