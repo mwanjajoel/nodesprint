@@ -44,4 +44,4 @@ var counter = function (arr) {
 console.log(counter(["Joel", "Rhona", "Essy"]));
 
 //then we make the counter function available to all files in this Node JS app
-module.exports = counter();
+module.exports = counter;

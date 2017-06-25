@@ -2,6 +2,8 @@
  * Created by mwanjajoel on 25/06/2017.
  */
 
+require("./count");
+
 var time = 0;
 
 //set a timer variable that runs a setInterval time function using the Function Expression technique in Node JS
