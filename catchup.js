@@ -2,6 +2,8 @@
  * Created by mwanjajoel on 25/06/2017.
  */
 
+let events = require("events");
+
 //normal JS function
 function sayHi() {
 
@@ -15,7 +17,7 @@ sayHi();
 
 
 //using a Function Expression in Node JS
-var sayBye = function () {
+let sayBye = function () {
 
     console.log("Bye Bye");
 
@@ -35,7 +37,7 @@ function callAnotherFunction(fun) {
 callAnotherFunction(sayBye);
 
 //random
-var counter = function (arr) {
+let counter = function (arr) {
 
     return "There are " + arr.length + " in this array";
 
@@ -45,3 +47,38 @@ console.log(counter(["Joel", "Rhona", "Essy"]));
 
 //then we make the counter function available to all files in this Node JS app
 module.exports = counter;
+
+
+//moving on to Node JS Events
+
+//declare an events emitter object
+myEventsEmitter = new events.EventEmitter();
+
+//attach a function once the event is emitted.
+myEventsEmitter.on('someEvent', function (message) {
+
+    //log it to the browser console
+    console.log(message)
+});
+
+//then we emit the event with a message parameter for the function.
+myEventsEmitter.emit('someEvent', 'Hi this is an event that has been emitted');
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

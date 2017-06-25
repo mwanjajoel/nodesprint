@@ -2,12 +2,13 @@
  * Created by mwanjajoel on 25/06/2017.
  */
 
-var stuff = require("./stuff");
+//get all the modules we need for this project
+let stuff = require("./stuff");
 
-var time = 0;
+let time = 0;
 
 //set a timer variable that runs a setInterval time function using the Function Expression technique in Node JS
-var timer = setInterval(function () {
+let timer = setInterval(function () {
 
     time += 2;
 
@@ -25,4 +26,7 @@ var timer = setInterval(function () {
 
 //this is from the Count JS module
 console.log(stuff.theCounter(["Jay", "Waiswa", "Jim-Owen"]));
+
+
+
 
