@@ -8,13 +8,26 @@ let fs = require('fs');
 let server = http.createServer(function (request, response) {
 
     //we then write response headers
-    response.writeHead(200, {'Content-Type': 'text/html'});
+   // response.writeHead(200, {'Content-Type': 'text/html'});
 
     //we create a readstream
-   var theReadStream =  fs.createReadStream(__dirname + '/index.html', 'utf8');
+  // var theReadStream =  fs.createReadStream(__dirname + '/index.html', 'utf8');
 
    //then we pipe it to the response
-    theReadStream.pipe(response);
+    //  theReadStream.pipe(response);
+
+    //returning JSON data
+    response.writeHead(200, {'Content-Type': 'application/json'});
+
+    //we create a simple JSON object
+    var theJsonData = {
+
+        name: 'Joel',
+        job: 'Codebender',
+        age: 24
+    }
+
+    response.end(JSON.stringify(theJsonData));
 
 
 
