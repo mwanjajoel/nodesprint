@@ -15,3 +15,14 @@ var readMe = fs.readFile('read.txt', 'utf8', function (error, data) {
 
 //writing to a file
 var writeMe = fs.writeFile('writeFile.txt', readMe);
+
+//this method deletes the file
+//fs.unlink('writeFile.txt');
+
+//this method creates a directory
+fs.mkdir('stuff', function () {
+
+    console.log("directory created");
+
+
+})
