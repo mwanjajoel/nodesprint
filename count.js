@@ -8,5 +8,6 @@ var theCounter = function (arr) {
     return "The array has " + arr.length + " elements in it";
 };
 
-//Print the statement in the browser console.
-console.log(theCounter(["Jay", "Waiswa", "Jim-Owen"]));
+
+module.exports(theCounter);
+

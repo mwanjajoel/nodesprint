@@ -2,7 +2,7 @@
  * Created by mwanjajoel on 25/06/2017.
  */
 
-require("./count");
+var theCounter = require("./count");
 
 var time = 0;
 
@@ -21,3 +21,7 @@ var timer = setInterval(function () {
     }
 
 }, 2000);
+
+//from the counter module
+//Print the statement in the browser console.
+console.log(theCounter(["Jay", "Waiswa", "Jim-Owen"]));
