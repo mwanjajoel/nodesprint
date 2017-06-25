@@ -22,6 +22,7 @@ var timer = setInterval(function () {
 
 }, 2000);
 
-//from the counter module
-//Print the statement in the browser console.
+
+//this is from the Count JS module
 console.log(theCounter(["Jay", "Waiswa", "Jim-Owen"]));
+

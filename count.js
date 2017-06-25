@@ -9,5 +9,7 @@ var theCounter = function (arr) {
 };
 
 
-module.exports(theCounter);
+//module.exports(theCounter);
+//from the counter module
+module.exports = theCounter;
 
