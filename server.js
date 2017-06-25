@@ -8,10 +8,10 @@ let fs = require('fs');
 let server = http.createServer(function (request, response) {
 
     //we then write response headers
-    response.writeHead(200, {'Content-Type': 'text/plain'});
+    response.writeHead(200, {'Content-Type': 'text/html'});
 
     //we create a readstream
-   var theReadStream =  fs.createReadStream(__dirname + '/read.txt', 'utf8');
+   var theReadStream =  fs.createReadStream(__dirname + '/index.html', 'utf8');
 
    //then we pipe it to the response
     theReadStream.pipe(response);
