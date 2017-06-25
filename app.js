@@ -2,7 +2,7 @@
  * Created by mwanjajoel on 25/06/2017.
  */
 
-var theCounter = require("./stuff");
+var stuff = require("./stuff");
 
 var time = 0;
 
@@ -24,5 +24,5 @@ var timer = setInterval(function () {
 
 
 //this is from the Count JS module
-console.log(theCounter(["Jay", "Waiswa", "Jim-Owen"]));
+console.log(stuff.theCounter(["Jay", "Waiswa", "Jim-Owen"]));
 
