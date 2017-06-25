@@ -15,6 +15,11 @@ let theAdder = function (a, b) {
 };
 
 //prepare the different functions for export
-module.exports.theCounter = theCounter;
-module.exports.theAdder = theAdder;
+module.exports = {
+
+    theCounter: theCounter,
+    theAdder: theAdder
+
+
+};
 
